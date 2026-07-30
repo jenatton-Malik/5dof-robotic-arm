@@ -68,7 +68,9 @@ AS5600 encoders on every axis serve two purposes:
 
 Each joint carries **alignment holes** that line up in a known position, where a metal pin is inserted to lock the axis precisely. That defines the absolute zero of the encoders.
 
-Because rotation is measured on the geared side, absolute reference is lost at power-off, so the arm is re-mastered at every startup. This is exactly how industrial robots handle it — and it's far more precise than relying on limit switches.
+The encoders sit on the motor side of the gearboxes, so each joint revolution turns the encoder 30 or 40 times. That multiplies effective angular resolution — 12 bits × 40 works out to roughly 0.002° per count on the geared joints — but it also means absolute position is lost at power-off: the controller knows the angle *within* an encoder turn, not which of the 40 turns it's on.
+
+So the arm is re-mastered at every startup. This is exactly how industrial robots handle it — and it's far more precise than relying on limit switches.
 
 ---
 
@@ -79,7 +81,7 @@ A **6-layer PCB**, designed entirely in KiCad, handling power, sensing and motor
 ![Control board](images/pcb_render.png)
 
 **Sensing**
-- **Position** — AS5600 12-bit magnetic encoders on every axis, over I²C
+- **Position** — AS5600 12-bit magnetic encoders on every axis, over I²C, mounted **before the reduction stage**
 - **Temperature** — an NTC-MF52-103 thermistor on each motor
 - **Current** — ACS712 20 A on each power rail (5 V / 12 V / 24 V), plus an ACS712 5 A monitoring the 24 V feed of *every individual driver*
 
