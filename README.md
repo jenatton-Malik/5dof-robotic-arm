@@ -156,7 +156,7 @@ One cable runs out of each axis. Not the tidiest routing in the world — but wi
 
 Being honest about this matters more to me than pretending it's finished. Every limitation here already has an engineered answer waiting to be built.
 
-*(drop your arm-in-motion video right here)*
+https://github.com/user-attachments/assets/b3c1b9c6-e296-4879-a392-d26202dca4f0
 
 ---
 
@@ -174,7 +174,7 @@ The arm has been through a lot of iterations since August 2025. A few snapshots 
 ![First physical build](images/robotic_arm_previous_version_13_09_2025.jpeg)
 <p align="center"><i>13 Sep 2025 — the first version to exist outside a screen</i></p>
 
-*(drop your first cycloidal gearbox prototype video here — where the whole mechanical side of this project started)*
+https://github.com/user-attachments/assets/fd8e16bf-cd0c-4888-8baf-7f20b51f5653
 
 ---
 
