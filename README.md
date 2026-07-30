@@ -22,6 +22,8 @@
 | **CAD** | Fusion 360 |
 | **Safety** | Physical emergency stop cutting the 24 V supply line |
 
+![CAD render](images/arm_cad_render.png)
+
 ---
 
 ## ⚙️ Joints & drivetrain
@@ -30,13 +32,19 @@ Every gearbox is a **cycloidal reducer designed from scratch**. They currently r
 
 | Joint | Motor | Ratio | Driver |
 |---|---|---|---|
-| Base / rotation | NEMA 17 — 17HE19-2004S (42 × 42 × 48 mm) | 1:30 | TB6600 |
+| Base / rotation | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
 | Shoulder | NEMA 23 — 23HS32-4004S | 1:40 | DM542 *(→ DM546 planned)* |
 | Elbow | NEMA 23 — 23HS22-2804S | 1:40 | DM542 |
 | Wrist roll | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
 | Wrist yaw | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
 
 > The shoulder's DM542 currently limits that motor to ~70 % of its rated torque. Moving to a DM546 unlocks the full 100 %.
+
+<p align="center">
+  <img src="images/nema17_gearbox_exploded.png" width="45%">
+  <img src="images/nema23_gearbox_exploded.png" width="45%">
+</p>
+<p align="center"><i>Exploded views — NEMA 17 (1:30) and NEMA 23 (1:40) cycloidal gearboxes</i></p>
 
 ### 💥 Destructive testing
 
@@ -78,7 +86,7 @@ So the arm is re-mastered at every startup. This is exactly how industrial robot
 
 A **6-layer PCB**, designed entirely in KiCad, handling power, sensing and motor control for the whole arm.
 
-![Control board](images/pcb_render.png)
+![Control board render](images/pcb_render.png)
 
 **Sensing**
 - **Position** — AS5600 12-bit magnetic encoders on every axis, over I²C, mounted **before the reduction stage**
@@ -95,7 +103,11 @@ A connector runs from the board to the end of the arm, carrying **5 V, 12 V and 
 
 **Design detail:** the AS5600 I²C pull-ups are 10 kΩ and 2.2 kΩ in parallel, giving ≈ 1.8 kΩ — strong enough to keep clean edges on a long, noisy bus.
 
----
+<p align="center">
+  <img src="images/pcb_layout.png" width="48%">
+  <img src="images/pcb_schematic.png" width="48%">
+</p>
+<p align="center"><i>6-layer routing and full schematic — KiCad</i></p>
 
 ### 🧪 I²C stress test — validating the encoder bus
 
@@ -132,11 +144,37 @@ One cable runs out of each axis. Not the tidiest routing in the world — but wi
 - The mechanical structure is complete and the arm is technically usable
 - Motion currently runs on prototype electronics — **one axis at a time**, until the control board is built
 
+<p align="center">
+  <img src="images/prototype_electronics1.jpeg" width="45%">
+  <img src="images/prototype_electronics2.jpeg" width="45%">
+</p>
+<p align="center"><i>Current prototype electronics — one axis at a time</i></p>
+
 **Known limitations (and why)**
 - **Backlash** in the printed gearboxes — I've done everything I can to minimise it, but FDM has hard limits. Solved by the aluminium versions.
-- **Flex / wobble** in the 3D-printed links — solved by the carbon-fibre tubes.
+- **Flex / wobble** in the 3D-printed links — clearly visible in the video below, and exactly why the carbon-fibre tubes are next on the list.
 
 Being honest about this matters more to me than pretending it's finished. Every limitation here already has an engineered answer waiting to be built.
+
+*(drop your arm-in-motion video right here)*
+
+---
+
+## 📈 Evolution
+
+The arm has been through a lot of iterations since August 2025. A few snapshots along the way:
+
+<p align="center">
+  <img src="images/robotic_arm_previous_version_20_08_2025.jpeg" width="30%">
+  <img src="images/robotic_arm_previous_version_22_08_2025.jpeg" width="30%">
+  <img src="images/robotic_arm_previous_version_11_09_2025.jpeg" width="30%">
+</p>
+<p align="center"><i>20 Aug 2025 · 22 Aug 2025 · 11 Sep 2025</i></p>
+
+![First physical build](images/robotic_arm_previous_version_13_09_2025.jpeg)
+<p align="center"><i>13 Sep 2025 — the first version to exist outside a screen</i></p>
+
+*(drop your first cycloidal gearbox prototype video here — where the whole mechanical side of this project started)*
 
 ---
 
@@ -173,12 +211,6 @@ If you're a company interested in supporting a young engineer building this in t
 ## 🛠️ Built with
 
 `Fusion 360` · `KiCad` · `Teensy 4.1 / Cortex-M7` · `Raspberry Pi 5` · `Python` · `Embedded C++` · `FDM 3D printing` · `CNC machining (partner)`
-
----
-
-## 📸 Gallery
-
-*(build history, prototypes and the very first gearbox — coming here)*
 
 ---
 
