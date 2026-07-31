@@ -214,6 +214,12 @@ If you're a company interested in supporting a young engineer building this in t
 
 ---
 
+## 🏭 Manufacturing
+
+Every PCB I've designed has been manufactured by **JLCPCB** — the 6-layer control board for this arm will be too, once funded.
+
+---
+
 ## 📜 License
 
 **© 2026 Malik Jenatton — All rights reserved.**
