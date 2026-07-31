@@ -198,6 +198,8 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 | Item | Purpose |
 |---|---|
 | PCB manufacturing + components | The 6-layer control board |
+| Carbon-fibre octagonal tubes (50 × 46 × 2 × 500 mm) | Final structural links, replacing the printed ones |
+| Shielded TRVVSP encoder cable | Reliable encoder signals along moving joints — one of the costlier items |
 | 24 V / 25 A power supply | Main arm supply |
 | 12 V & 5 V step-down converters (10 A) | Logic and auxiliary rails |
 | DM546 driver | Full torque on the shoulder axis |
@@ -205,7 +207,6 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 | Raspberry Pi touchscreen | Operator interface |
 
 If you're a company interested in supporting a young engineer building this in the open, I'd love to talk.
-
 ---
 
 ## 🛠️ Built with
