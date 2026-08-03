@@ -33,7 +33,7 @@ Every gearbox is a **cycloidal reducer designed from scratch**. They currently r
 | Joint | Motor | Ratio | Driver |
 |---|---|---|---|
 | Base / rotation | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
-| Shoulder | NEMA 23 — 23HS32-4004S | 1:40 | DM542 *(→ DM546 planned)* |
+| Shoulder | NEMA 23 — 23HS32-4004S | 1:40 | DM542 *(→ DM556 planned)* |
 | Elbow | NEMA 23 — 23HS22-2804S | 1:40 | DM542 |
 | Wrist roll | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
 | Wrist yaw | NEMA 17 — 17HE19-2004S | 1:30 | TB6600 |
@@ -202,7 +202,7 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 | Shielded TRVVSP encoder cable | Reliable encoder signals along moving joints — one of the costlier items |
 | 24 V / 25 A power supply | Main arm supply |
 | 12 V & 5 V step-down converters (10 A) | Logic and auxiliary rails |
-| DM546 driver | Full torque on the shoulder axis |
+| DM556 driver | Full torque on the shoulder axis |
 | GX16 9-pin connectors | Correct pin count for all joint signals |
 | Raspberry Pi touchscreen | Operator interface |
 
