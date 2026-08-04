@@ -199,7 +199,7 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 |---|---|
 | PCB manufacturing + components | The 6-layer control board |
 | Carbon-fibre octagonal tubes (50 × 46 × 2 × 500 mm) | Final structural links, replacing the printed ones |
-| Shielded TRVVSP encoder cable | Reliable encoder signals along moving joints — one of the costlier items |
+| Shielded CAT6 Ethernet | Reliable encoder signals along moving joints|
 | 24 V / 25 A power supply | Main arm supply |
 | 12 V & 5 V step-down converters (10 A) | Logic and auxiliary rails |
 | DM556 driver | Full torque on the shoulder axis |
