@@ -95,7 +95,7 @@ A **6-layer PCB**, designed entirely in KiCad, handling power, sensing and motor
 
 **I/O expansion**
 - `TCA9548A` I²C multiplexer, so all five AS5600 encoders can share the bus despite having the same fixed address
-- `MCP23017` GPIO expander driving STEP, the power MOSFETs, and DIR
+- `MCP23017` GPIO expander driving STEP, DIR, ENA and the power MOSFETs
 - DIR lines are routed through **0 Ω jumper resistors**, so each axis can be driven either directly by the Teensy or through the expander — a deliberate choice to keep options open during bring-up
 
 **Tool interface**
