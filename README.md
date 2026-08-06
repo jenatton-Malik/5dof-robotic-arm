@@ -218,9 +218,15 @@ jnttmalik@icloud.com
 
 ---
 
-## 🏭 Manufacturing
+## 🏭 Manufacturing & Sponsors
 
-Every PCB I've designed has been manufactured by **JLCPCB** — the 6-layer control board for this arm will be too, once funded.
+**JLCPCB** — sponsor of this project. They are manufacturing the 6-layer
+control board, as well as a breakout board that distributes the STEP, DIR
+and ENA signals to the stepper drivers. PCBs for my earlier projects were
+manufactured at my own cost by JLCPCB.
+
+**CFAI Thyez** — CNC machining of the aluminium cycloidal gearboxes,
+kindly offered.
 
 ---
 
