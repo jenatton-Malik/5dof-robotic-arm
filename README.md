@@ -183,7 +183,7 @@ https://github.com/user-attachments/assets/fd8e16bf-cd0c-4888-8baf-7f20b51f5653
 - [ ] Manufacture the 6-layer control board and populate it
 - [ ] Machine the cycloidal gearboxes in aircraft-grade aluminium *(CFAI Thyez)*
 - [ ] Replace printed links with carbon-fibre octagonal tubes
-- [ ] Upgrade the shoulder driver to a DM546
+- [ ] Upgrade the shoulder driver to a DM556
 - [ ] Add the 24 V / 25 A supply and the 12 V & 5 V step-down converters
 - [ ] Switch from prototype electronics to full 5-axis simultaneous control
 - [ ] Implement inverse kinematics and the teach & repeat system
@@ -207,6 +207,9 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 | Raspberry Pi touchscreen | Operator interface |
 
 If you're a company interested in supporting a young engineer building this in the open, I'd love to talk.
+
+jnttmalik@icloud.com
+
 ---
 
 ## 🛠️ Built with
@@ -230,3 +233,4 @@ This project is shared publicly for documentation and demonstration purposes. No
 I'm a strong believer in open source, and I fully intend to release this project under an open hardware licence — but only once it's finished and I've had time to choose the right one. Until then, all rights are reserved.
 
 If you'd like to use anything here, just ask — I'm open to it.
+
