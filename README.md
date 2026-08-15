@@ -126,6 +126,18 @@ Long I²C lines running alongside stepper phases are a classic recipe for corrup
 
 ---
 
+### 🔀 Breakout board
+
+A dedicated breakout board distributes the **STEP, DIR and ENA signals** from the control board to each stepper driver. It also carries a **UART line** and **5 V / 3.3 V rails**, reserved for potential future upgrades.
+
+<p align="center">
+  <img src="images/breakout_board_pcb.png" width="48%">
+  <img src="images/breakout_board_3d.png" width="48%">
+</p>
+<p align="center"><i>Breakout board — PCB layout and 3D render</i></p>
+
+---
+
 ## 🔗 Wiring
 
 Each joint uses a **GX16 connector**, so motor phases, encoder and thermistor can be plugged and unplugged cleanly.
