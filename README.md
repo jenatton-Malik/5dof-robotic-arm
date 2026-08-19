@@ -235,7 +235,7 @@ control board, as well as a breakout board that distributes the STEP, DIR
 and ENA signals to the stepper drivers. PCBs for my earlier projects were
 manufactured at my own cost by JLCPCB.
 
-**[LACS](https://lacs-swiss.ch/)** — financial support toward tooling and
+**[LACS](https://lacs-swiss.ch/)** — financial support toward the components for the robot, tooling and
 components for the lab.
 
 **CFAI Thyez** — CNC machining of the aluminium cycloidal gearboxes,
