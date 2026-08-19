@@ -192,7 +192,6 @@ https://github.com/user-attachments/assets/fd8e16bf-cd0c-4888-8baf-7f20b51f5653
 
 ## 🗺️ Roadmap
 
-- [ ] Manufacture the 6-layer control board and populate it
 - [ ] Machine the cycloidal gearboxes in aircraft-grade aluminium *(CFAI Thyez)*
 - [ ] Replace printed links with carbon-fibre octagonal tubes
 - [ ] Upgrade the shoulder driver to a DM556
@@ -209,7 +208,6 @@ This arm is entirely self-funded, and hardware at this scale gets expensive fast
 
 | Item | Purpose |
 |---|---|
-| PCB manufacturing + components | The 6-layer control board |
 | Carbon-fibre octagonal tubes (50 × 46 × 2 × 500 mm) | Final structural links, replacing the printed ones |
 | Shielded CAT6 Ethernet | Reliable encoder signals along moving joints|
 | 24 V / 25 A power supply | Main arm supply |
