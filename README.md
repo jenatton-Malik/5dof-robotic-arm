@@ -232,10 +232,13 @@ jnttmalik@icloud.com
 
 ## 🏭 Manufacturing & Sponsors
 
-**JLCPCB** — sponsor of this project. They are manufacturing the 6-layer
+**[JLCPCB](https://jlcpcb.com/)** — sponsor of this project. They are manufacturing the 6-layer
 control board, as well as a breakout board that distributes the STEP, DIR
 and ENA signals to the stepper drivers. PCBs for my earlier projects were
 manufactured at my own cost by JLCPCB.
+
+**[LACS](https://lacs-swiss.ch/)** — financial support toward tooling and
+components for the lab.
 
 **CFAI Thyez** — CNC machining of the aluminium cycloidal gearboxes,
 kindly offered.
