@@ -116,10 +116,14 @@ A connector runs from the board to the end of the arm, carrying **5 V, 12 V and 
 The 6-layer board is now manufactured and assembled — and already on the bench.
 
 <p align="center">
-  <img src="images/pcb_partially_populated.jpeg" width="45%">
-  <img src="images/pcb_testing_raspberry_pi.jpeg" width="45%">
+  <img src="images/pcb_partially_populated.jpeg" width="85%">
 </p>
-<p align="center"><i>Left: the board partially populated · Right: fully assembled and under test with the Raspberry Pi 5</i></p>
+<p align="center"><i>The 6-layer board, partially populated</i></p>
+
+<p align="center">
+  <img src="images/pcb_testing_raspberry_pi.jpeg" width="85%">
+</p>
+<p align="center"><i>Fully assembled and under test with the Raspberry Pi 5</i></p>
 
 Bring-up is under way, one function at a time:
 - **UART link** — measuring how fast the Raspberry Pi 5 can reliably talk to the Teensy 4.1 (Cortex-M7), and checking data integrity at each speed
