@@ -109,6 +109,25 @@ A connector runs from the board to the end of the arm, carrying **5 V, 12 V and 
 </p>
 <p align="center"><i>6-layer routing and full schematic — KiCad</i></p>
 
+---
+
+### 🏗️ From render to reality
+
+The 6-layer board is now manufactured and assembled — and already on the bench.
+
+<p align="center">
+  <img src="images/pcb_partially_populated.jpeg" width="45%">
+  <img src="images/pcb_testing_raspberry_pi.jpeg" width="45%">
+</p>
+<p align="center"><i>Left: the board partially populated · Right: fully assembled and under test with the Raspberry Pi 5</i></p>
+
+Bring-up is under way, one function at a time:
+- **UART link** — measuring how fast the Raspberry Pi 5 can reliably talk to the Teensy 4.1 (Cortex-M7), and checking data integrity at each speed
+- **Board functions** — validating power rails, sensing and I/O expansion
+- **First motion** — driving a robot axis directly from the new board
+
+---
+
 ### 🧪 I²C stress test — validating the encoder bus
 
 Long I²C lines running alongside stepper phases are a classic recipe for corrupted data, so before committing to the design I built the **worst case I could imagine** and tried to break it.
